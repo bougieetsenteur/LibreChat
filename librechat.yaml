@@ -1,0 +1,14 @@
+version: 1.2.1
+
+mcpServers:
+  github:
+    type: stdio
+    command: npx
+    args:
+      - -y
+      - "@modelcontextprotocol/server-github"
+    startup: false
+    customUserVars:
+      - GITHUB_PERSONAL_ACCESS_TOKEN
+    env:
+      GITHUB_PERSONAL_ACCESS_TOKEN: "{{GITHUB_PERSONAL_ACCESS_TOKEN}}"
