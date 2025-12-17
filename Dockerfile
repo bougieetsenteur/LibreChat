@@ -47,7 +47,6 @@ RUN \
 # Node API setup
 EXPOSE 3080
 ENV HOST=0.0.0.0
-COPY --chown=node:node librechat.yaml /app/librechat.yaml
 CMD ["npm", "run", "backend"]
 
 # Optional: for client with nginx routing
